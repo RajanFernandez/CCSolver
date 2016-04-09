@@ -10,6 +10,31 @@
 		E502089B1CB9C0570005D2C2 /* CCSolver.h in Headers */ = {isa = PBXBuildFile; fileRef = E502089A1CB9C0570005D2C2 /* CCSolver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E50208A21CB9C0580005D2C2 /* CCSolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50208971CB9C0570005D2C2 /* CCSolver.framework */; };
 		E50208A71CB9C0580005D2C2 /* CCSolverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E50208A61CB9C0580005D2C2 /* CCSolverTests.m */; };
+		E50209171CB9C25B0005D2C2 /* CCArray.h in Headers */ = {isa = PBXBuildFile; fileRef = E50209061CB9C25A0005D2C2 /* CCArray.h */; };
+		E50209181CB9C25B0005D2C2 /* CCArray.m in Sources */ = {isa = PBXBuildFile; fileRef = E50209071CB9C25A0005D2C2 /* CCArray.m */; };
+		E50209191CB9C25B0005D2C2 /* CCArray.m in Sources */ = {isa = PBXBuildFile; fileRef = E50209071CB9C25A0005D2C2 /* CCArray.m */; };
+		E502091A1CB9C25B0005D2C2 /* WordDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = E50209081CB9C25A0005D2C2 /* WordDirection.h */; };
+		E502091B1CB9C25B0005D2C2 /* CCSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = E50209091CB9C25B0005D2C2 /* CCSquare.h */; };
+		E502091C1CB9C25B0005D2C2 /* CCSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = E502090A1CB9C25B0005D2C2 /* CCSquare.m */; };
+		E502091D1CB9C25B0005D2C2 /* CCSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = E502090A1CB9C25B0005D2C2 /* CCSquare.m */; };
+		E502091E1CB9C25B0005D2C2 /* CCSquareLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = E502090B1CB9C25B0005D2C2 /* CCSquareLocation.h */; };
+		E502091F1CB9C25B0005D2C2 /* CCSquareLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E502090C1CB9C25B0005D2C2 /* CCSquareLocation.m */; };
+		E50209201CB9C25B0005D2C2 /* CCSquareLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E502090C1CB9C25B0005D2C2 /* CCSquareLocation.m */; };
+		E50209211CB9C25B0005D2C2 /* CCGame.h in Headers */ = {isa = PBXBuildFile; fileRef = E502090D1CB9C25B0005D2C2 /* CCGame.h */; };
+		E50209221CB9C25B0005D2C2 /* CCGame.m in Sources */ = {isa = PBXBuildFile; fileRef = E502090E1CB9C25B0005D2C2 /* CCGame.m */; };
+		E50209231CB9C25B0005D2C2 /* CCGame.m in Sources */ = {isa = PBXBuildFile; fileRef = E502090E1CB9C25B0005D2C2 /* CCGame.m */; };
+		E50209241CB9C25B0005D2C2 /* CCWordSolver.h in Headers */ = {isa = PBXBuildFile; fileRef = E502090F1CB9C25B0005D2C2 /* CCWordSolver.h */; };
+		E50209251CB9C25B0005D2C2 /* CCWordSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = E50209101CB9C25B0005D2C2 /* CCWordSolver.m */; };
+		E50209261CB9C25B0005D2C2 /* CCWordSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = E50209101CB9C25B0005D2C2 /* CCWordSolver.m */; };
+		E50209271CB9C25B0005D2C2 /* CCWord.h in Headers */ = {isa = PBXBuildFile; fileRef = E50209111CB9C25B0005D2C2 /* CCWord.h */; };
+		E50209281CB9C25B0005D2C2 /* CCWord.m in Sources */ = {isa = PBXBuildFile; fileRef = E50209121CB9C25B0005D2C2 /* CCWord.m */; };
+		E50209291CB9C25B0005D2C2 /* CCWord.m in Sources */ = {isa = PBXBuildFile; fileRef = E50209121CB9C25B0005D2C2 /* CCWord.m */; };
+		E502092A1CB9C25B0005D2C2 /* CCDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = E50209131CB9C25B0005D2C2 /* CCDictionary.h */; };
+		E502092B1CB9C25B0005D2C2 /* CCDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = E50209141CB9C25B0005D2C2 /* CCDictionary.m */; };
+		E502092C1CB9C25B0005D2C2 /* CCDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = E50209141CB9C25B0005D2C2 /* CCDictionary.m */; };
+		E502092D1CB9C25B0005D2C2 /* CCGameMove.h in Headers */ = {isa = PBXBuildFile; fileRef = E50209151CB9C25B0005D2C2 /* CCGameMove.h */; };
+		E502092E1CB9C25B0005D2C2 /* CCGameMove.m in Sources */ = {isa = PBXBuildFile; fileRef = E50209161CB9C25B0005D2C2 /* CCGameMove.m */; };
+		E502092F1CB9C25B0005D2C2 /* CCGameMove.m in Sources */ = {isa = PBXBuildFile; fileRef = E50209161CB9C25B0005D2C2 /* CCGameMove.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +54,23 @@
 		E50208A11CB9C0580005D2C2 /* CCSolverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCSolverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E50208A61CB9C0580005D2C2 /* CCSolverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCSolverTests.m; sourceTree = "<group>"; };
 		E50208A81CB9C0580005D2C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E50209061CB9C25A0005D2C2 /* CCArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCArray.h; sourceTree = "<group>"; };
+		E50209071CB9C25A0005D2C2 /* CCArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCArray.m; sourceTree = "<group>"; };
+		E50209081CB9C25A0005D2C2 /* WordDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordDirection.h; sourceTree = "<group>"; };
+		E50209091CB9C25B0005D2C2 /* CCSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSquare.h; sourceTree = "<group>"; };
+		E502090A1CB9C25B0005D2C2 /* CCSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSquare.m; sourceTree = "<group>"; };
+		E502090B1CB9C25B0005D2C2 /* CCSquareLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSquareLocation.h; sourceTree = "<group>"; };
+		E502090C1CB9C25B0005D2C2 /* CCSquareLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSquareLocation.m; sourceTree = "<group>"; };
+		E502090D1CB9C25B0005D2C2 /* CCGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGame.h; sourceTree = "<group>"; };
+		E502090E1CB9C25B0005D2C2 /* CCGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCGame.m; sourceTree = "<group>"; };
+		E502090F1CB9C25B0005D2C2 /* CCWordSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCWordSolver.h; sourceTree = "<group>"; };
+		E50209101CB9C25B0005D2C2 /* CCWordSolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCWordSolver.m; sourceTree = "<group>"; };
+		E50209111CB9C25B0005D2C2 /* CCWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCWord.h; sourceTree = "<group>"; };
+		E50209121CB9C25B0005D2C2 /* CCWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCWord.m; sourceTree = "<group>"; };
+		E50209131CB9C25B0005D2C2 /* CCDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDictionary.h; sourceTree = "<group>"; };
+		E50209141CB9C25B0005D2C2 /* CCDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDictionary.m; sourceTree = "<group>"; };
+		E50209151CB9C25B0005D2C2 /* CCGameMove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGameMove.h; sourceTree = "<group>"; };
+		E50209161CB9C25B0005D2C2 /* CCGameMove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCGameMove.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +113,25 @@
 		E50208991CB9C0570005D2C2 /* CCSolver */ = {
 			isa = PBXGroup;
 			children = (
+				E50208B11CB9C09D0005D2C2 /* Model */,
 				E502089A1CB9C0570005D2C2 /* CCSolver.h */,
+				E50209061CB9C25A0005D2C2 /* CCArray.h */,
+				E50209071CB9C25A0005D2C2 /* CCArray.m */,
+				E50209081CB9C25A0005D2C2 /* WordDirection.h */,
+				E50209091CB9C25B0005D2C2 /* CCSquare.h */,
+				E502090A1CB9C25B0005D2C2 /* CCSquare.m */,
+				E502090B1CB9C25B0005D2C2 /* CCSquareLocation.h */,
+				E502090C1CB9C25B0005D2C2 /* CCSquareLocation.m */,
+				E502090D1CB9C25B0005D2C2 /* CCGame.h */,
+				E502090E1CB9C25B0005D2C2 /* CCGame.m */,
+				E502090F1CB9C25B0005D2C2 /* CCWordSolver.h */,
+				E50209101CB9C25B0005D2C2 /* CCWordSolver.m */,
+				E50209111CB9C25B0005D2C2 /* CCWord.h */,
+				E50209121CB9C25B0005D2C2 /* CCWord.m */,
+				E50209131CB9C25B0005D2C2 /* CCDictionary.h */,
+				E50209141CB9C25B0005D2C2 /* CCDictionary.m */,
+				E50209151CB9C25B0005D2C2 /* CCGameMove.h */,
+				E50209161CB9C25B0005D2C2 /* CCGameMove.m */,
 				E502089C1CB9C0570005D2C2 /* Info.plist */,
 			);
 			path = CCSolver;
@@ -86,6 +146,13 @@
 			path = CCSolverTests;
 			sourceTree = "<group>";
 		};
+		E50208B11CB9C09D0005D2C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,7 +160,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E50209271CB9C25B0005D2C2 /* CCWord.h in Headers */,
+				E50209211CB9C25B0005D2C2 /* CCGame.h in Headers */,
+				E50209171CB9C25B0005D2C2 /* CCArray.h in Headers */,
+				E502092D1CB9C25B0005D2C2 /* CCGameMove.h in Headers */,
+				E502091A1CB9C25B0005D2C2 /* WordDirection.h in Headers */,
 				E502089B1CB9C0570005D2C2 /* CCSolver.h in Headers */,
+				E502091E1CB9C25B0005D2C2 /* CCSquareLocation.h in Headers */,
+				E502091B1CB9C25B0005D2C2 /* CCSquare.h in Headers */,
+				E502092A1CB9C25B0005D2C2 /* CCDictionary.h in Headers */,
+				E50209241CB9C25B0005D2C2 /* CCWordSolver.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +269,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E50209251CB9C25B0005D2C2 /* CCWordSolver.m in Sources */,
+				E50209281CB9C25B0005D2C2 /* CCWord.m in Sources */,
+				E502091C1CB9C25B0005D2C2 /* CCSquare.m in Sources */,
+				E50209181CB9C25B0005D2C2 /* CCArray.m in Sources */,
+				E502091F1CB9C25B0005D2C2 /* CCSquareLocation.m in Sources */,
+				E50209221CB9C25B0005D2C2 /* CCGame.m in Sources */,
+				E502092E1CB9C25B0005D2C2 /* CCGameMove.m in Sources */,
+				E502092B1CB9C25B0005D2C2 /* CCDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +285,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E50208A71CB9C0580005D2C2 /* CCSolverTests.m in Sources */,
+				E50209201CB9C25B0005D2C2 /* CCSquareLocation.m in Sources */,
+				E50209191CB9C25B0005D2C2 /* CCArray.m in Sources */,
+				E502092F1CB9C25B0005D2C2 /* CCGameMove.m in Sources */,
+				E50209231CB9C25B0005D2C2 /* CCGame.m in Sources */,
+				E50209261CB9C25B0005D2C2 /* CCWordSolver.m in Sources */,
+				E502092C1CB9C25B0005D2C2 /* CCDictionary.m in Sources */,
+				E502091D1CB9C25B0005D2C2 /* CCSquare.m in Sources */,
+				E50209291CB9C25B0005D2C2 /* CCWord.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

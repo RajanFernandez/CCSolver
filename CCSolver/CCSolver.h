@@ -16,4 +16,7 @@ FOUNDATION_EXPORT const unsigned char CCSolverVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <CCSolver/PublicHeader.h>
 
+#import <CCGame.h>
+#import <CCArray.h>
+
 
