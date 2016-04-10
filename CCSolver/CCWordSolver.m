@@ -27,7 +27,7 @@
         if ([square containsCharacter]) {
             key = [[NSString stringWithFormat:@"%c", square.character] lowercaseString];
         } else {
-            key = [NSString stringWithFormat:@"%lu", square.codeIndex];
+            key = [NSString stringWithFormat:@"%lu", (unsigned long)square.codeIndex];
         }
         
         NSMutableArray *places = [criteria objectForKey:key];

@@ -160,7 +160,7 @@
 //
 -(void)print {
     CCSquare *first = _squares[0];
-    printf("(%lu, %lu) ", first.row, first.column);
+    printf("(%lu, %lu) ", (unsigned long)first.row, (unsigned long)first.column);
     switch (self.direction) {
         case Across: {
             printf("Across: ");
@@ -182,7 +182,7 @@
             [word appendString:[square valueAsString]];
         };
     }
-    [word appendString:[NSString stringWithFormat:@" (difficulty: %lu, solutions: %lu)\n", self.difficulty, [self numberOfSolutions]]];
+    [word appendString:[NSString stringWithFormat:@" (difficulty: %lu, solutions: %lu)\n", (unsigned long)self.difficulty, (unsigned long)[self numberOfSolutions]]];
     printf("%s", [word UTF8String]);
 }
 

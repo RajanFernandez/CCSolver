@@ -50,7 +50,7 @@
 }
 
 -(void)print {
-    printf("index: %lu, value: %c, row: %lu, column %lu.\n", _codeIndex, self.character, _row, _column);
+    printf("index: %lu, value: %c, row: %lu, column %lu.\n", (unsigned long)_codeIndex, self.character, (unsigned long)_row, (unsigned long)_column);
 }
 
 -(NSString *)valueAsString {
