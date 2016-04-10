@@ -1,2 +1,2 @@
 # CCSolver
-A group of class to model and solver Code Cracker style puzzle games.
+A group of classes to model and solve Code Cracker style puzzle games.
