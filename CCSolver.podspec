@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "CCsolver"
+  s.name         = "CCSolver"
   s.version      = "0.0.1"
   s.summary      = "A group of classes to model and solve Code Cracker style puzzle games."
   s.homepage     = "https://github.com/RajanFernandez/CCSolver"
