@@ -12,11 +12,14 @@
 
 @interface CCWord : NSObject
 
-+(instancetype)initWithSquare:(CCSquare *)square;
-+(instancetype)initWithSquares:(NSArray *)squares;
+-(id)init;
 
-@property NSMutableArray *squares;
-@property NSArray *solutions;
++(instancetype)word;
++(instancetype)wordWithSquare:(CCSquare *)square;
++(instancetype)wordWithSquares:(NSArray *)squares;
+
+@property NSMutableArray<CCSquare *> *squares;
+@property NSArray<NSString *> *solutions;
 // The index of the game move where the word was validated
 // < 0 : word is unvalidated, > 0 : index of move in the game history when the word was validated.
 @property NSInteger validatedAtMoveNumber;

@@ -11,7 +11,7 @@
 
 @interface CCWordSolver : NSObject
 
-+(NSMutableDictionary *)criteriaForWord:(CCWord *)word;
++(NSDictionary *)criteriaForWord:(CCWord *)word;
 +(NSMutableArray *)shortlistForIncompleteWord:(CCWord *)word;
 +(BOOL)word:(NSString *)word hasKnownCharacter:(char)character inPlaces:(NSArray *)places;
 +(BOOL)word:(NSString *)word hasCommonCharacterInPlaces:(NSArray *)places;

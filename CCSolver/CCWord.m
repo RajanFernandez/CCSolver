@@ -11,23 +11,34 @@
 
 @implementation CCWord
 
-+(instancetype)initWithSquare:(CCSquare *)square {
+-(id)init {
+    if (self = [super init]) {
+        self.squares = [NSMutableArray array];
+        self.solutions = [NSArray array];
+        self.validatedAtMoveNumber = -1;
+        return self;
+    } else
+        return nil;
+}
+
++(instancetype)word {
     CCWord *instance = [[[self class] alloc] init];
-    instance.squares = [[NSMutableArray alloc] init];
+    return instance;
+}
+
++(instancetype)wordWithSquare:(CCSquare *)square {
+    CCWord *instance = [CCWord word];
     [instance.squares addObject:square];
-    instance.validatedAtMoveNumber = -1;
     return instance;
 }
 
-+(instancetype)initWithSquares:(NSArray *)squares {
-    CCWord *instance = [[[self class] alloc] init];
-    instance.squares = [[NSMutableArray alloc] init];
-    instance.squares = [NSMutableArray arrayWithArray:squares];
-    instance.validatedAtMoveNumber = -1;
++(instancetype)wordWithSquares:(NSArray *)squares {
+    CCWord *instance = [CCWord word];
+    [instance.squares addObjectsFromArray:squares];
     return instance;
 }
 
-// MARK: Calculated properties
+#pragma mark Calculated properties
 
 -(NSUInteger)length {
     return [_squares count];
@@ -118,7 +129,7 @@
 }
 
 
-// MARK: Instance methods
+#pragma mark NSCopying Protocol
 
 -(id)copyWithZone:(NSZone *)zone
 {
@@ -126,10 +137,12 @@
     for (CCSquare *square in _squares) {
         [squares addObject:[square copy]];
     }
-    CCWord *another = [CCWord initWithSquares:squares];
+    CCWord *another = [CCWord wordWithSquares:squares];
     another.solutions = [_solutions copy];
     return another;
 }
+
+#pragma mark Instance methods
 
 // Appends a square to the word
 //

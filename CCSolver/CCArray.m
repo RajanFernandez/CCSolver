@@ -14,14 +14,14 @@
 
 // Initalises the Code Cracker array with an array of the square index numbers
 //
-+(instancetype)initWithArray:(NSArray *)array {
++(instancetype)arrayWithArray:(NSArray *)array {
     CCArray *instance = [[[self class] alloc] init];
     NSMutableArray *squares = [[NSMutableArray alloc] initWithCapacity:[array count]];
     for (int i = 0; i < [array count]; i++) {
         squares[i] = [[NSMutableArray alloc] initWithCapacity:[array[0] count]];
         for (int j = 0;  j < [array[0] count]; j++) {
             NSNumber *index = array[i][j];
-            squares[i][j] = [CCSquare initWithIndex:index.unsignedIntegerValue row:i column:j];
+            squares[i][j] = [CCSquare squareWithIndex:index.unsignedIntegerValue row:i column:j];
         }
     }
     instance.array = [NSArray arrayWithArray:squares];
@@ -134,7 +134,7 @@
 //
 -(CCWord *)acrossWordStartingAtSquare:(CCSquare *)square {
     
-    CCWord *word = [CCWord initWithSquare:square];
+    CCWord *word = [CCWord wordWithSquare:square];
     NSUInteger row = square.row;
     NSUInteger column = square.column;
     column++;
@@ -155,7 +155,7 @@
 //
 -(CCWord *)downWordStartingAtSquare:(CCSquare *)square {
     
-    CCWord *word = [CCWord initWithSquare:square];
+    CCWord *word = [CCWord wordWithSquare:square];
     NSUInteger row = square.row;
     NSUInteger column = square.column;
     row++;

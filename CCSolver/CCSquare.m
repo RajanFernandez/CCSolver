@@ -12,10 +12,34 @@
 
 @synthesize character = _character;
 
-+(instancetype)initWithIndex:(NSUInteger)index row:(int)row column:(int)column {
+-(id)init {
+    if (self = [super init]) {
+        self.codeIndex = 0;
+        self.character = '\0';
+        self.row = 0;
+        self.column = 0;
+        return self;
+    } else
+        return nil;
+}
+
++(instancetype)square {
     CCSquare *square = [[[self class] alloc] init];
+    return square;
+}
+
++(instancetype)squareWithIndex:(NSUInteger)index row:(int)row column:(int)column {
+    CCSquare *square = [CCSquare square];
     square.codeIndex = index;
-    square.character = '\0';
+    square.row = row;
+    square.column = column;
+    return square;
+}
+
++(instancetype)squareWithIndex:(NSUInteger)index character:(char)character row:(int)row column:(int)column {
+    CCSquare *square = [CCSquare square];
+    square.codeIndex = index;
+    square.character = character;
     square.row = row;
     square.column = column;
     return square;
@@ -36,13 +60,17 @@
 }
 
 -(void)setCharacter:(char)character {
-    // Capitalise stored characters
-    if (character != '\0') {
-        NSString *upperCase = [[NSString stringWithFormat:@"%c", character] uppercaseString];
-        _character = [upperCase characterAtIndex:0];
-    } else {
-        _character = character;
+    
+    // Check that the character is a letter of the alphabet and if it isn't set charcter to nil.
+    NSCharacterSet *alphabet = [NSCharacterSet letterCharacterSet];
+    if (![alphabet characterIsMember:character]) {
+        _character = '\0';
+        return;
     }
+    
+    // Capitalise stored characters
+    NSString *upperCase = [[NSString stringWithFormat:@"%c", character] uppercaseString];
+    _character = [upperCase characterAtIndex:0];
 }
 
 -(BOOL)containsCharacter {

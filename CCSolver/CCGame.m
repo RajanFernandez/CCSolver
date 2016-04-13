@@ -15,7 +15,7 @@
 
 +(instancetype)initWithArray:(NSArray*)array {
     CCGame *instance = [[[self class] alloc] init];
-    instance.array = [CCArray initWithArray:array];
+    instance.array = [CCArray arrayWithArray:array];
     instance.code = [[NSMutableArray alloc] initWithCapacity:LETTERS_IN_ALPHABET];
     for (int i = 0; i < LETTERS_IN_ALPHABET; i++) {
         [instance.code insertObject:[NSNull null] atIndex:i];

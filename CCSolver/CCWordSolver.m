@@ -52,10 +52,12 @@
     
     // Get the full list of words
     NSMutableArray *shortlist = [NSMutableArray arrayWithArray:[CCDictionary englishDictionary]];
+    NSLog(@"%@", shortlist);
     
     // Get the criteria for word matching
     NSUInteger length = [word length];
     NSDictionary *allCriteria = [CCWordSolver criteriaForWord:word];
+    NSLog(@"%@", allCriteria);
     
     // Formatter for checking if criteria dictionary keys are letters or numbers
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
@@ -104,6 +106,7 @@
         }
     }
     
+    NSLog(@"%@", shortlist);
     return shortlist;
 }
 

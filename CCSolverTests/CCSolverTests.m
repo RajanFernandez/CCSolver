@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "CCDictionary.h"
 
 @interface CCSolverTests : XCTestCase
 
@@ -24,16 +25,28 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testDictionaryLoads {
+    NSArray* dict = [CCDictionary englishDictionary];
+    NSUInteger expectedEntries = 109582;
+    NSUInteger entries = [dict count];
+    XCTAssertTrue(entries == expectedEntries, @"The dictionary should have %lu entries when loaded correctly, not %lu.", expectedEntries, entries);
+    
+    // Check the first dictionary entry was read correctly
+    NSString *expectedFirstWord = @"a";
+    NSString * firstWord = [dict firstObject];
+    XCTAssertTrue([firstWord isEqual:expectedFirstWord], @"Expected the first entry in the dictionary to be '%@', not %@", expectedFirstWord, firstWord);
+    
+    // Check the last dictionary entry was read correctly
+    NSString *expectedLastWord = @"zyzzyvas";
+    NSString *lastWord = [dict lastObject];
+    XCTAssertTrue([lastWord isEqual:expectedLastWord], @"Expected the last entry in the dictionary to be '%@', not %@", expectedLastWord, lastWord);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
+//- (void)testPerformanceExample {
+//    // This is an example of a performance test case.
+//    [self measureBlock:^{
+//        // Put the code you want to measure the time of here.
+//    }];
+//}
 
 @end

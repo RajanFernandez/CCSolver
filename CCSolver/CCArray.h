@@ -15,7 +15,7 @@
 @property NSArray *array;
 @property NSArray *words;
 
-+(instancetype)initWithArray:(NSArray *)array;
++(instancetype)arrayWithArray:(NSArray *)array;
 +(NSArray *)wordsInArray:(CCArray *)array;
 
 // Array and square properties

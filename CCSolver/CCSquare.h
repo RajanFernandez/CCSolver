@@ -10,7 +10,10 @@
 
 @interface CCSquare : NSObject
 
-+(instancetype)initWithIndex:(NSUInteger)index row:(int)row column:(int)column;
+-(id)init;
+
++(instancetype)squareWithIndex:(NSUInteger)index row:(int)row column:(int)column;
++(instancetype)squareWithIndex:(NSUInteger)index character:(char)character row:(int)row column:(int)column;
 
 // The code index, i.e. the numbers in the squares of the puzzle (1-26)
 @property NSUInteger codeIndex;

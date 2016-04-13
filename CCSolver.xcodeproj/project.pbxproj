@@ -35,6 +35,8 @@
 		E502092D1CB9C25B0005D2C2 /* CCGameMove.h in Headers */ = {isa = PBXBuildFile; fileRef = E50209151CB9C25B0005D2C2 /* CCGameMove.h */; };
 		E502092E1CB9C25B0005D2C2 /* CCGameMove.m in Sources */ = {isa = PBXBuildFile; fileRef = E50209161CB9C25B0005D2C2 /* CCGameMove.m */; };
 		E502092F1CB9C25B0005D2C2 /* CCGameMove.m in Sources */ = {isa = PBXBuildFile; fileRef = E50209161CB9C25B0005D2C2 /* CCGameMove.m */; };
+		E5B8941F1CBCFA66005970E4 /* EnglishDictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = E5B8941E1CBCFA66005970E4 /* EnglishDictionary.txt */; };
+		E5B894211CBE43AE005970E4 /* EnglishDictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = E5B8941E1CBCFA66005970E4 /* EnglishDictionary.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,7 @@
 		E50209141CB9C25B0005D2C2 /* CCDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDictionary.m; sourceTree = "<group>"; };
 		E50209151CB9C25B0005D2C2 /* CCGameMove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGameMove.h; sourceTree = "<group>"; };
 		E50209161CB9C25B0005D2C2 /* CCGameMove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCGameMove.m; sourceTree = "<group>"; };
+		E5B8941E1CBCFA66005970E4 /* EnglishDictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EnglishDictionary.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +116,25 @@
 		E50208991CB9C0570005D2C2 /* CCSolver */ = {
 			isa = PBXGroup;
 			children = (
+				E5B8941D1CBCFA2C005970E4 /* Resources */,
 				E50208B11CB9C09D0005D2C2 /* Model */,
+				E502089C1CB9C0570005D2C2 /* Info.plist */,
+			);
+			path = CCSolver;
+			sourceTree = "<group>";
+		};
+		E50208A51CB9C0580005D2C2 /* CCSolverTests */ = {
+			isa = PBXGroup;
+			children = (
+				E50208A61CB9C0580005D2C2 /* CCSolverTests.m */,
+				E50208A81CB9C0580005D2C2 /* Info.plist */,
+			);
+			path = CCSolverTests;
+			sourceTree = "<group>";
+		};
+		E50208B11CB9C09D0005D2C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				E502089A1CB9C0570005D2C2 /* CCSolver.h */,
 				E50209061CB9C25A0005D2C2 /* CCArray.h */,
 				E50209071CB9C25A0005D2C2 /* CCArray.m */,
@@ -132,25 +153,16 @@
 				E50209141CB9C25B0005D2C2 /* CCDictionary.m */,
 				E50209151CB9C25B0005D2C2 /* CCGameMove.h */,
 				E50209161CB9C25B0005D2C2 /* CCGameMove.m */,
-				E502089C1CB9C0570005D2C2 /* Info.plist */,
-			);
-			path = CCSolver;
-			sourceTree = "<group>";
-		};
-		E50208A51CB9C0580005D2C2 /* CCSolverTests */ = {
-			isa = PBXGroup;
-			children = (
-				E50208A61CB9C0580005D2C2 /* CCSolverTests.m */,
-				E50208A81CB9C0580005D2C2 /* Info.plist */,
-			);
-			path = CCSolverTests;
-			sourceTree = "<group>";
-		};
-		E50208B11CB9C09D0005D2C2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		E5B8941D1CBCFA2C005970E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E5B8941E1CBCFA66005970E4 /* EnglishDictionary.txt */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5B8941F1CBCFA66005970E4 /* EnglishDictionary.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5B894211CBE43AE005970E4 /* EnglishDictionary.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +482,7 @@
 				E50208AD1CB9C0580005D2C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E50208AE1CB9C0580005D2C2 /* Build configuration list for PBXNativeTarget "CCSolverTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +491,7 @@
 				E50208B01CB9C0580005D2C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
