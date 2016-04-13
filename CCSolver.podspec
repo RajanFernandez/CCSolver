@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Rajan Fernandez" => "rajan.fernandez@gmail.com" }
   s.platform     = :ios
-  s.source       = { :git => "https://github.com/RajanFernandez/CCSolver.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/RajanFernandez/CCSolver.git", :tag => "0.0.2" }
   s.source_files  = "CCSolver/**/*.{h,m}"
   s.resources = "CCSolver/**/*.{txt}"
   s.requires_arc = true
