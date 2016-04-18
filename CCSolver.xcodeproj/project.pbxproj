@@ -35,6 +35,7 @@
 		E502092D1CB9C25B0005D2C2 /* CCGameMove.h in Headers */ = {isa = PBXBuildFile; fileRef = E50209151CB9C25B0005D2C2 /* CCGameMove.h */; };
 		E502092E1CB9C25B0005D2C2 /* CCGameMove.m in Sources */ = {isa = PBXBuildFile; fileRef = E50209161CB9C25B0005D2C2 /* CCGameMove.m */; };
 		E502092F1CB9C25B0005D2C2 /* CCGameMove.m in Sources */ = {isa = PBXBuildFile; fileRef = E50209161CB9C25B0005D2C2 /* CCGameMove.m */; };
+		E56A888F1CC4C9D300B18F47 /* CCDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E56A888E1CC4C9D300B18F47 /* CCDictionaryTests.m */; };
 		E5B8941F1CBCFA66005970E4 /* EnglishDictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = E5B8941E1CBCFA66005970E4 /* EnglishDictionary.txt */; };
 		E5B894211CBE43AE005970E4 /* EnglishDictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = E5B8941E1CBCFA66005970E4 /* EnglishDictionary.txt */; };
 /* End PBXBuildFile section */
@@ -73,6 +74,7 @@
 		E50209141CB9C25B0005D2C2 /* CCDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDictionary.m; sourceTree = "<group>"; };
 		E50209151CB9C25B0005D2C2 /* CCGameMove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGameMove.h; sourceTree = "<group>"; };
 		E50209161CB9C25B0005D2C2 /* CCGameMove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCGameMove.m; sourceTree = "<group>"; };
+		E56A888E1CC4C9D300B18F47 /* CCDictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDictionaryTests.m; sourceTree = "<group>"; };
 		E5B8941E1CBCFA66005970E4 /* EnglishDictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EnglishDictionary.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +128,7 @@
 		E50208A51CB9C0580005D2C2 /* CCSolverTests */ = {
 			isa = PBXGroup;
 			children = (
+				E56A888E1CC4C9D300B18F47 /* CCDictionaryTests.m */,
 				E50208A61CB9C0580005D2C2 /* CCSolverTests.m */,
 				E50208A81CB9C0580005D2C2 /* Info.plist */,
 			);
@@ -307,6 +310,7 @@
 				E502092C1CB9C25B0005D2C2 /* CCDictionary.m in Sources */,
 				E502091D1CB9C25B0005D2C2 /* CCSquare.m in Sources */,
 				E50209291CB9C25B0005D2C2 /* CCWord.m in Sources */,
+				E56A888F1CC4C9D300B18F47 /* CCDictionaryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
