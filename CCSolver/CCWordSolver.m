@@ -88,7 +88,7 @@
     for (NSString *key in criteriaKeys) {
         
         // Array of indexes where the key occurs in the the word
-        NSArray *places = [criteria objectForKey:key];
+        NSSet *places = [criteria objectForKey:key];
         
         // Try to convert the key to a code cracker integer index
         NSNumber *decimalKey = [formatter numberFromString:key];
@@ -110,7 +110,7 @@
     return true;
 }
 
-+ (BOOL)word:(NSString *)word hasKnownCharacter:(char)character inPlaces:(NSArray *)places {
++ (BOOL)word:(NSString *)word hasKnownCharacter:(char)character inPlaces:(NSSet *)places {
 
     // Check every character in the word
     for (int i = 0; i < [word length]; i++) {

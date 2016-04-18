@@ -80,9 +80,9 @@
  */
 - (void)testKnownCharactersInPlacesMethod {
     NSString *word = @"lesson";
-    BOOL result = [CCWordSolver word:word hasKnownCharacter:'n' inPlaces:@[@5]];
+    BOOL result = [CCWordSolver word:word hasKnownCharacter:'n' inPlaces:[NSSet setWithArray:@[@5]]];
     XCTAssertTrue(result, "Solver failed to detect a character in the correct position in a word.");
-    result = [CCWordSolver word:word hasKnownCharacter:'n' inPlaces:@[@2, @3, @4]];
+    result = [CCWordSolver word:word hasKnownCharacter:'n' inPlaces:[NSSet setWithArray:@[@2, @3, @4]]];
     XCTAssertFalse(result, "Solver failed to detect a character in incorrect positions in a word.");
 }
 

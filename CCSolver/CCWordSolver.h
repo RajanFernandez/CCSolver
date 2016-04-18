@@ -48,7 +48,7 @@
  * @param character The character to check for.
  * @param places An array of integers specifying the character indexes to expect the known character.
  */
-+(BOOL)word:(NSString *)word hasKnownCharacter:(char)character inPlaces:(NSArray *)places;
++(BOOL)word:(NSString *)word hasKnownCharacter:(char)character inPlaces:(NSSet *)places;
 
 /*!
  * @brief Returns true if the input word has a common charater at all the given indexes, and that that character does not occur at any other indexes in the word.
